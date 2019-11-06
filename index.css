@@ -1,0 +1,161 @@
+body {
+    background: #fefac0;
+}
+
+:root {
+    font-family: 'Crafty Girls', cursive;
+    --main-color: black; --accent-color: red; scroll-behavior: smooth;
+}
+
+/*
+header nav {
+    display: flex;
+    align-items: center;
+*/
+header nav .logo {
+    margin-top: 35px;
+    margin-right: 25px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    font-family: 'Bungee Shade', serif;
+    text-shadow: 0 1px 0 white;
+}
+
+header nav #menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--main-color);
+    font-family: 'Crafty Girls', cursive;
+}
+
+header nav #menu a:hover {
+    border: 1px solid var(--accent-color);
+    background: #fefac0;
+    border-radius: 0.3em;
+    transition: all 0.4s;
+    color: black;
+    cursor: pointer;
+}
+
+#burgermenu {
+    display: block;
+    position: relative;
+    top: -45px;
+    left: 25px;
+    z-index: 1;
+}
+
+#burgermenu input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: 7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+
+#burgermenu span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #000000;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+}
+
+#burgermenu span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#burgermenu span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#burgermenu input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #0e0d0d;
+}
+
+#burgermenu input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#burgermenu input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+    position: absolute;
+    width: 200px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ffa834;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+#burgermenu input:checked ~ ul {
+    transform: none;
+}
+
+header .banner {
+    background-image: url(./img/manybook.jpg);
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header .banner h1 {
+    font-size: 2rem;
+    color: white , black, white;
+    font-family: 'Bungee Shade', serif;
+    margin-bottom: 2rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #ffffff;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.3s;
+    background-color: transparent;
+}
+
+.button:hover {
+    border-color: #ffffff;
+    color: black;
+    background-color: #ffa834;
