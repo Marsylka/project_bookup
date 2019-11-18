@@ -14,33 +14,92 @@
         <header>
             <nav>
                 <div class="logo">BOOK-UP!!</div>
-            </nav>
-            <nav class="navigation">
-                <div id="burgermenu">
-                    <input type="checkbox"/>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <ul id="menu">
-                        <li>
-                            <a href="#home">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about">Prodyct</a>
-                        </li>
-                        <li>
-                            <a href="#info">Cart</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#cart">Cart</a></li>   
+                </ul>
             </nav>
             <div class="banner">
                 <h1>READ MORE!!</h1>
                 <button class="button">buy now</button>
             </div>
         </header>
+    <main> 
+    <section id="products">
+     <h2 class="headers">Products</h2>
+        <div class="product-list">
+            <article>
+                <h3 class="smallHeaders">36 and 6 companion cats</h3>
+                <img src="img/product/36 and 6 cats.jpg" alt="Lonely grandparents living in an aging home need helpers.">
+                <div class="buttons">
+                    <button class="button card-button">Info</button>
+                    <h2 class="price">15 $</h2>
+                    <button class="button card-button">Buy</button>
+                </div>
+            </article>
+             <article>
+               <h3 class="smallHeaders">Write and cut</h3>
+                <img src="img/product/write and cut.jpg" alt="Lonely grandparents living in an aging home need helpers.">
+                <div class="buttons">
+                    <button class="button card-button">Info</button>
+                    <h2 class="price">10 $</h2>
+                    <button class="button card-button">Buy</button>
+                </div>
+            </article>
+             <article>
+                <h3 class="smallHeaders">MINECRAFT</h3>
+                <img src="img/product/minecraft.jpg" alt="Minecraft its a life">
+                <div class="buttons">
+                    <button class="button card-button">Info</button>
+                    <h2 class="price">7 $</h2>
+                    <button class="button card-button">Buy</button>
+                </div>
+            </article>
+            <article>
+               <h3 class="smallHeaders">Subconscious!</h3>
+                <img src="img/product/subconscious.jpg" alt="The subconscious is a kind of Marian depression; it is the bosom of the human psyche.">
+                <div class="buttons">
+                    <button class="button card-button">Info</button>
+                    <h2 class="price">8 $</h2>
+                    <button class="button card-button">Buy</button>
+                </div>
+            </article>
+        </div>
+    </section>
+    </main>
+    
+    <footer>
+    <section id="contacts">
+        <h2 class="headers">Contacts</h2>
+
+        <div class="forma">
+				<form  class="contacts-form" action="" method="">
+                <h2 class="smallHeaders">Leave your mark</h2>
+					<div class="input">
+						<label>
+            				Name:<br>
+            				<input type="text" name="userName" placeholder="Your Name" pattern="[A-ZА-ЯЇ][a-zа-яї]+"  required autofocus>
+            			</label>
+						<br>
+						<label>
+            				Mail:<br>
+            				<input type="email" name="userMail" placeholder="Your mail" required>
+            			</label>
+						<br>
+						<label>Password:
+						<br>
+						<input type="password" name="userParol" placeholder="Your password" required>
+						</label>
+                        <br>
+						<button class="submit-botton">Send</button>
+					</div>
+				</form>
+
+    </section>
+    </footer>
+    <script src="js/index.js"></script>
     </body>
 </html>
