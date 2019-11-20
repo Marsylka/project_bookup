@@ -1,27 +1,58 @@
-body {
-    background: #fefac0;
-}
-
 :root {
     font-family: 'Crafty Girls', cursive;
     --main-color: black; --accent-color: red; scroll-behavior: smooth;
 }
+
+body {
+    max-width: 980px;
+    margin: auto;
+    background: #fefac0;
+}
+
+header .navbar-light {
+    background-color: #fefac0;
+}
+
 header nav .logo {
-    text-align: center;
-    font-weight: bolder;
+    display: flex;
+    justify-content: center;
     text-decoration: none;
-    font-size: 30px;
+    text-align: center;
+    text-transform: none;
+    font-size: 38px;
     color: black;
     font-family: 'Bungee Shade', serif;
     text-shadow: 0 1px 0 white;
 }
-header nav .menu {
-display: flex;
-list-style: none;
-justify-content: space-around;
-padding: 0;
+
+header nav .logo a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    text-transform: none;
 }
-header nav .menu a {
+
+header .nav-item a {
+    text-transform: uppercase;
+}
+
+header .nav-item .nav-link {
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+header nav .nav-item a:hover::after {
+    transform: scale(1);
+}
+
+header nav #menu {
+    list-style: none;
+    padding: 0;
+}
+
+header nav #menu a {
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bolder;
@@ -30,7 +61,7 @@ header nav .menu a {
     font-family: 'Crafty Girls', cursive;
 }
 
-header nav .menu a:hover {
+header nav #menu a:hover {
     border: 1px solid var(--accent-color);
     background: #fefac0;
     border-radius: 0.3em;
@@ -40,13 +71,16 @@ header nav .menu a:hover {
 }
 
 .headers {
-	font-size: 28px;
-	text-align: center;
+    padding: 10px;
+    font-size: 28px;
+    text-align: center;
     font-family: 'Bungee Shade', serif;
 }
+
 .smallHeaders {
     text-align: center;
 }
+
 @media (min-width: 550px) {
     header nav {
         display: flex;
@@ -57,6 +91,7 @@ header nav .menu a:hover {
         flex: 1;
     }
 }
+
 header .banner {
     background-image: url(./img/manybook.jpg);
     min-height: 500px;
@@ -104,14 +139,14 @@ header .banner h1 {
 
 .card-button:hover {
     border-color: red;
-    background-color:  #ffa834;
+    background-color: #ffa834;
     color: black;
 }
-
 
 main .product-list article img {
     display: block;
     width: 100%;
+    justify-content: center;
 }
 
 main .product-list article .buttons {
@@ -139,7 +174,8 @@ main .product-list article .buttons {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
 footer {
-	background: #ffa834;
-	padding: 20px 20px;
+    background: #ffa834;
+    padding: 20px 20px;
 }
