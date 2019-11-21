@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Crafty+Girls&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body class="container">
         <header>
@@ -34,10 +34,13 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#contacts">Contacts</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#cart">Cart</a>
-                        </li>
                     </ul>
+                    <div>
+                    <a class="nav-link" href="#cartModal" data-toggle="modal">
+                      <i class="fas fa-shopping-cart"></i>
+                        Cart<span id="cart-badge" class="badge badge-light"></span>
+                    </a>
+                </div>
                 </div>
             </nav>
             <div class="banner">
@@ -46,83 +49,12 @@
             </div>
         </header>
         <main>
-            <section id="products">
-                <h2 class="headers">Products</h2>
-                <div class="product-list">
-                    <article>
-                        <h3 class="smallHeaders">36 and 6  cats</h3>
-                        <img width="235" height="325" src="img/product/36and6cats.jpg" alt="Lonely grandparents living in an aging home need helpers.">
-                        <div class="buttons">
-                            <button class="button card-button">Info</button>
-                            <h2 class="price">15 $</h2>
-                            <button class="button card-button">Buy</button>
-                        </div>
-                    </article>
-                    <article>
-                        <h3 class="smallHeaders">Write and cut</h3>
-                        <img width="235" height="325" src="img/product/writeAndCut.jpg" alt="Lonely grandparents living in an aging home need helpers.">
-                        <div class="buttons">
-                            <button class="button card-button">Info</button>
-                            <h2 class="price">10 $</h2>
-                            <button class="button card-button">Buy</button>
-                        </div>
-                    </article>
-                    <article>
-                        <h3 class="smallHeaders">MINECRAFT</h3>
-                        <img width="235" height="325" src="img/product/minecraft.jpg" alt="Minecraft its a life">
-                        <div class="buttons">
-                            <button class="button card-button">Info</button>
-                            <h2 class="price">7 $</h2>
-                            <button class="button card-button">Buy</button>
-                        </div>
-                    </article>
-                    <article>
-                        <h3 class="smallHeaders">Subconscious!</h3>
-                        <img width="235" height="325" src="img/product/subconscious.jpg" alt="The subconscious is a kind of Marian depression; it is the bosom of the human psyche.">
-                        <div class="buttons">
-                            <button class="button card-button">Info</button>
-                            <h2 class="price">8 $</h2>
-                            <button class="button card-button">Buy</button>
-                        </div>
-                    </article>
-                    <article>
-                        <h3 class="smallHeaders">36 and 6  cats</h3>
-                        <img width="235" height="325" src="img/product/36and6cats.jpg" alt="Lonely grandparents living in an aging home need helpers.">
-                        <div class="buttons">
-                            <button class="button card-button">Info</button>
-                            <h2 class="price">15 $</h2>
-                            <button class="button card-button">Buy</button>
-                        </div>
-                    </article>
-                    <article>
-                        <h3 class="smallHeaders">Write and cut</h3>
-                        <img width="235" height="325" src="img/product/writeAndCut.jpg" alt="Lonely grandparents living in an aging home need helpers.">
-                        <div class="buttons">
-                            <button class="button card-button">Info</button>
-                            <h2 class="price">10 $</h2>
-                            <button class="button card-button">Buy</button>
-                        </div>
-                    </article>
-                    <article>
-                        <h3 class="smallHeaders">MINECRAFT</h3>
-                        <img width="235" height="325" src="img/product/minecraft.jpg" alt="Minecraft its a life">
-                        <div class="buttons">
-                            <button class="button card-button">Info</button>
-                            <h2 class="price">7 $</h2>
-                            <button class="button card-button">Buy</button>
-                        </div>
-                    </article>
-                    <article>
-                        <h3 class="smallHeaders">Subconscious!</h3>
-                        <img width="235" height="325" src="img/product/subconscious.jpg" alt="The subconscious is a kind of Marian depression; it is the bosom of the human psyche.">
-                        <div class="buttons">
-                            <button class="button card-button">Info</button>
-                            <h2 class="price">8 $</h2>
-                            <button class="button card-button">Buy</button>
-                        </div>
-                    </article>
-                </div>
-            </section>
+             <section>
+            <h2 id="products">Products</h2>
+            <div class="row products-container">
+               <!--Products are dynamically generated here-->
+            </div>
+        </section>
         </main>
         <section id="Events">
             <h2 class="headers">Events</h2>
@@ -225,27 +157,72 @@
                 </div>
             </section>
         </footer>
-        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
+        <!-- Modal Product Info -->
+    <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoLabel">Product Info</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <img class="card-img-top" src="" alt="">
+              <h4 class="card-title"></h4>
+              <p class="card-text"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button class="btn btn-primary buy" data-id="id">Buy</button>
+          </div>
         </div>
-        <script src="login/form.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </div>
+    </div>
+
+    <!-- Modal Cart -->
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartLabel">Cart</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="cart-product-list-container"></div>
+            <hr>
+            <div class="container">
+              <form>
+                <div class="form-group row">
+                  <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                  <input class="form-control col-8" type="text" id="client-name" required>
+                </div>
+                <div class="form-group row">
+                  <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                  <input class="form-control col-8" type="email" id="client-email" required>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button class="btn btn-primary order">Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+    <script async src="js/alert-window.js"></script>
+    <script defer src="js/cart.js"></script>
+    <script defer src="js/product-list.js"></script>    
+    <script defer src="js/index.js"></script>
+    <script defer src="login/form.js"></script>
     </body>
 </html>

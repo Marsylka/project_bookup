@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "title": "36 and 6  cats",
+        "image": "36and6cats.jpg",
+        "description": "Book for lonely grandparents living in an aging home need helpers.",
+        "price": 9
+    },
+    {
+        "id": "2",
+        "title": "Write and cut",
+        "image": "writeAndCut.jpg",
+        "description": "This book about. How you can wtite and cut your life.",
+        "price": 10
+    },
+    {
+        "id": "3",
+        "title": "MINECRAFT",
+        "image": "minecraft.jpg",
+        "description": "Minecraft its a life! - dont miss this book/howewer if you a maniac good luck",
+        "price": 7
+    },
+    {
+        "id": "4",
+        "title": "Subconscious!",
+        "image": "subconscious.jpg",
+        "description": "The subconscious is a kind of Marian depression; it is the bosom of the human psyche.",
+        "price": 5
+    },
+    {
+        "id": "5",
+        "title": "Black gyroboard",
+        "image": "gyroboard-black.jpg",
+        "description": "Black gyroboard to match your style",
+        "price": 729.99
+    },
+    {
+        "id": "6",
+        "title": "White gyroboard",
+        "image": "gyroboard-white.jpg",
+        "description": "White gyroboard with blue lights",
+        "price": 9
+    },
+    {
+        "id": "7",
+        "title": "Tesla Model X",
+        "image": "tesla-x.jpg",
+        "description": "Best crossover in the World",
+        "price": 10
+    },
+    {
+        "id": "8",
+        "title": "Tesla Roadster",
+        "image": "tesla-roadster.jpg",
+        "description": "Best sports car in the World",
+        "price": 249999.99
+    }
+]
