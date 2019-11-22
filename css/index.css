@@ -91,7 +91,7 @@ header nav #menu a:hover {
     }
 }
 
-header .banner {
+.logotype .banner {
     background-image: url(/img/manybook.jpg);
     min-height: 500px;
     background-size: cover;
