@@ -9,10 +9,13 @@
         <link href="https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Crafty+Girls&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body class="container">
-        <header>
+        <header class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="logo" href="index.html" id="home">BOOK-UP!!</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,18 +32,18 @@
                             <a class="nav-link" href="#products">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#login">Login</a>
+                            <a class="nav-link" href="#events">Events</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contacts">Contacts</a>
                         </li>
                     </ul>
                     <div>
-                    <a class="nav-link" href="#cartModal" data-toggle="modal">
-                      <i class="fas fa-shopping-cart"></i>
-                        Cart<span id="cart-badge" class="badge badge-light"></span>
-                    </a>
-                </div>
+                        <a class="nav-link" href="#cartModal" data-toggle="modal">
+                            <i class="fas fa-shopping-cart"></i>
+                            Cart<span id="cart-badge" class="badge badge-light"></span>
+                        </a>
+                    </div>
                 </div>
             </nav>
             <div class="banner">
@@ -48,15 +51,16 @@
                 <button class="button">buy now</button>
             </div>
         </header>
-        <main>
-             <section>
-            <h2 id="products">Products</h2>
-            <div class="row products-container">
-               <!--Products are dynamically generated here-->
-            </div>
-        </section>
+        <a id="scrollToTheTop"></a>
+        <main class="container">
+            <section>
+                <h2 class="headers" id="products">Products</h2>
+                <div class="row products-container">
+                <!--Products are dynamically generated here-->
+                </div>
+            </section>
         </main>
-        <section id="Events">
+        <section id="events">
             <h2 class="headers">Events</h2>
             <div class="bd-example">
                 <div id="carouselEvents" class="carousel slide" data-ride="carousel">
@@ -101,128 +105,122 @@
         </section>
         <section id="Information">
             <h2 class="headers">Information</h2>
-            <div class="InformationBorder">
-                <div class="InformationBorder-1">
-                    <i class="info_icon">
-                        <img src="" alt="">
-                    </i>
-                    <p class="advantage__text">Store hours: 9:00 am to 9:00 pm without weekends </p>
-                </div>
-                <div class="InformationBorder-2">
-                    <i class="info_icon">
-                        <img src="" alt="">
-                    </i>
-                    <p class="info_text">more than 300 books</p>
-                </div>
-                <div class="InformationBorder-3">
-                    <i class="info_icon">
-                        <img src="" alt="">
-                    </i>
-                    <p class="info_text">Permanent promotions and discounts             </p>
-                </div>
-                <div class="InformationBorder-4">
-                    <i class="info_icon">
-                        <img src="" alt="">
-                    </i>
-                    <p class="info_text">10 bookstores           </p>
-                </div>
+            <h3 class="opentime">We will open soon </h3>
+            <div class="timer">
+                <script src="//megatimer.ru/get/fedc5902ba3b334f5ee5e368de346a39.js"></script>
             </div>
         </section>
-        <footer>
+        <footer class="undergroud">
             <section id="contacts">
                 <h2 class="headers">Contacts</h2>
-                <div class="contactForm">
-                    <form class="contacts-form" action="" method="POST">
-                        <h2 class="smallHeaders">Leave your mark</h2>
-                        <div class="input">
-                            <label>
-                                Name:<br>
-                                <input type="text" name="userName" placeholder="Your Name" pattern="[A-ZА-ЯЇ][a-zа-яї]+" required autofocus>
-                            </label>
-                            <br>
-                            <label>
-                                Mail:<br>
-                                <input type="email" name="userMail" placeholder="Your mail" required>
-                            </label>
-                            <br>
-                            <label>
-                                Password:
-						<br>
-                                <input type="password" name="userParol" placeholder="Your password" required>
-                            </label>
-                            <br>
-                            <button class="submit-botton">Send</button>
+                <div class="contacts">
+                    <div class="addres">
+                        <div class="icon">
+                            <img src="img/icon/navigation.png" alt="Some one here me?">
                         </div>
-                    </form>
+                        <h3>Location</h3>
+                        <p>Kulparkivska St, 226а, L'viv</p>
+                    </div>
+                    <div class="telephone">
+                        <div class="icon">
+                            <img src="img/icon/call_back.png" alt="Bzzzz">
+                        </div>
+                        <h3>Call me! if you can)</h3>
+                        <p>+38 (097) 888 77 66 </p>
+                    </div>
+                    <div class="hours-work">
+                        <div class="icon">
+                            <img src="img/icon/acces_time.png" alt="Ky-ky ky-ky">
+                        </div>
+                        <h3>Work Hours</h3>
+                        <p>9:00 am to 9:00 pm </p>
+                    </div>
+                    <div class="e-mail">
+                        <div class="icon">
+                            <img src="img/icon/email.png" alt="Wzyhhhhhh">
+                        </div>
+                        <h3>E-Mail:</h3>
+                        <p>some@gmail.com</p>
+                    </div>
                 </div>
+                <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2430.3385458870894!2d23.977515632161005!3d49.80761517265027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x46f72ce2040d60cf!2sVictoria%20Gardens!5e0!3m2!1sen!2sua!4v1574398423307!5m2!1sen!2sua" width="800" height="450" style="border:0;" allowfullscreen=""></iframe>
             </section>
+            <div class="postscriptym">
+                <div class="links">
+                    <a href="https://vk.com/marsylka">
+                        <ion-icon name="logo-vk"></ion-icon>
+                    </a>
+                    <a href="https://www.facebook.com/volodymyr.mars.9">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </div>
+                <p>© 2019. Volodymyr Shymkov</p>
+            </div>
         </footer>
         <!-- Modal Product Info -->
-    <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="productInfoLabel">Product Info</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-              <img class="card-img-top" src="" alt="">
-              <h4 class="card-title"></h4>
-              <p class="card-text"></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button class="btn btn-primary buy" data-id="id">Buy</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal Cart -->
-    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="cartLabel">Cart</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="cart-product-list-container"></div>
-            <hr>
-            <div class="container">
-              <form>
-                <div class="form-group row">
-                  <label for="client-name" class="col-4 col-form-label">Your name:</label>
-                  <input class="form-control col-8" type="text" id="client-name" required>
+        <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productInfoLabel">Product Info</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="card-img-top" src="#" alt="products body">
+                        <a class="card-title"></a>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button class="btn btn-primary buy" data-id="id">Buy</button>
+                    </div>
                 </div>
-                <div class="form-group row">
-                  <label for="client-email" class="col-4 col-form-label">Your email:</label>
-                  <input class="form-control col-8" type="email" id="client-email" required>
-                </div>
-              </form>
             </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button class="btn btn-primary order">Order</button>
-          </div>
         </div>
-      </div>
-    </div>
-
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
-    <script async src="js/alert-window.js"></script>
-    <script defer src="js/cart.js"></script>
-    <script defer src="js/product-list.js"></script>    
-    <script defer src="js/index.js"></script>
-    <script defer src="login/form.js"></script>
+        <!-- Modal Cart -->
+        <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cartLabel">Cart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-product-list-container"></div>
+                        <hr>
+                        <div class="container">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                                    <input class="form-control col-8" type="text" id="client-name" required>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                                    <input class="form-control col-8" type="email" id="client-email" required>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button class="btn btn-primary order">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script async src="js/alert-window.js"></script>
+        <script async src="js/scroll.js"></script>
+        <script defer src="js/cart.js"></script>
+        <script defer src="js/product-list.js"></script>
+        <script defer src="js/index.js"></script>
     </body>
 </html>

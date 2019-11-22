@@ -29,30 +29,33 @@
     },
     {
         "id": "5",
-        "title": "Black gyroboard",
-        "image": "gyroboard-black.jpg",
-        "description": "Black gyroboard to match your style",
-        "price": 729.99
+        "title": "The person is smart.!",
+        "image": "human_is_smart.jpg",
+        "description": "A study that breaks the established notions of earth history from the appearance of man and the birth of language to the present day and makes one think.",
+        "price": 30
     },
+    
     {
         "id": "6",
-        "title": "White gyroboard",
-        "image": "gyroboard-white.jpg",
-        "description": "White gyroboard with blue lights",
-        "price": 9
+        "title": "12 rules of life. How to Overcome Chaos!",
+        "image": "12_rules_life.jpg",
+        "description": "Virtue cannot be replaced by tolerance, and the lack of clear moral ideals can be explained by respect for the opinions of others.",
+        "price": 13
     },
+
     {
         "id": "7",
-        "title": "Tesla Model X",
-        "image": "tesla-x.jpg",
-        "description": "Best crossover in the World",
-        "price": 10
+        "title": "The unbearable ease of being",
+        "image": "The_unbearable_ease_of_being.jpg",
+        "description": "The Unbearable Ease of Being is a legendary novel by one of Milan Kundera, one of the most outstanding writers of our time.",
+        "price": 17
     },
+
     {
         "id": "8",
-        "title": "Tesla Roadster",
-        "image": "tesla-roadster.jpg",
-        "description": "Best sports car in the World",
-        "price": 249999.99
+        "title": "A day that taught me to live",
+        "image": "the_day_since_life.jpg",
+        "description": "Who among us did not wait for the day that would change our lives? A sunny day off, full of warm colors and positive emotions.",
+        "price": 18
     }
 ]

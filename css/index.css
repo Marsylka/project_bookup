@@ -3,14 +3,14 @@
     --main-color: black; --accent-color: red; scroll-behavior: smooth;
 }
 
-body {
+.container {
     max-width: 980px;
     margin: auto;
     background: #fefac0;
 }
 
 header .navbar-light {
-    background-color: #fefac0;
+    background-color: #ffa834;
 }
 
 header nav .logo {
@@ -22,7 +22,6 @@ header nav .logo {
     font-size: 38px;
     color: black;
     font-family: 'Bungee Shade', serif;
-    text-shadow: 0 1px 0 white;
 }
 
 header nav .logo a {
@@ -178,4 +177,122 @@ main .product-list article .buttons {
 footer {
     background: #ffa834;
     padding: 20px 20px;
+    text-align: center;
+    font-family: 'Crafty Girls', cursive;
 }
+
+.card {
+    height: 100%;
+}
+
+.alert {
+    position: fixed;
+    top: 50px;
+    width: 50%;
+    left: 25%;
+    z-index: 1051;
+}
+
+.btn {
+    padding: 0.75rem 0.7rem;
+}
+
+#scrollToTheTop {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#scrollToTheTop::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#scrollToTheTop:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#scrollToTheTop:active {
+    background-color: #555;
+}
+
+#scrollToTheTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.row {
+    font-family: 'Crafty Girls', cursive;
+}
+
+.modal fade {
+    font-family: 'Crafty Girls', cursive;
+}
+
+#events {
+    background-color: #ffd783;
+}
+
+#contacts {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+@media (min-width: 650px) {
+    #contacts .contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+ion-icon {
+    font-size: 54px;
+}
+
+.opentime {
+    padding: 10px;
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Crafty Girls', cursive;
+}
+
+.timer {
+    margin-bottom: 20px;
+    width: 100%
+}
+
+.links {
+    margin-top: 30px;
+}
+
+.googlemap {
+    width: 100%;
+}
+
+/*
+.googlemap {
+width : 870px ;
+height : 450px ;
+}
+/*
+ max-height: 325px;
+/*

@@ -1,0 +1,8 @@
+{"clientName":"MAsrs","clientEmail":"jsakd@mail","cart":{"2":2,"3":5,"4":1}}
+{"clientName":"NAsmdn","clientEmail":"ajasdk@mail.ru","cart":{"2":3,"3":1}}
+{"clientName":"asndasn","clientEmail":"ajsdhsaj@mail","cart":{"2":1,"4":16,"5":1,"6":1,"7":1,"8":1}}
+{"clientName":"asmdnmfd","clientEmail":"sfs@sdf","cart":{"2":2,"3":2,"4":1}}
+{"clientName":"LAST NAME","clientEmail":"aaaa@sobaka","cart":{"1":1,"2":1,"3":1,"4":1,"5":1,"6":1,"7":1,"8":1}}
+{"clientName":"SLAVIK","clientEmail":"sadk@mail.ru","cart":{"2":1,"3":1,"4":1}}
+{"clientName":"jfsahf","clientEmail":"asd@mail.cdi","cart":{"3":1,"5":1,"6":1,"7":1,"8":1}}
+{"clientName":"volik","clientEmail":"bolik@mail.ru","cart":{"1":1,"2":1,"4":1,"5":1,"6":1,"7":1,"8":1}}
